@@ -1,0 +1,31 @@
+/* Fonte personalizada */
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../font/dancing-script/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Classe utilizadas na seção Nossos Projetos */
+.nossos-projetos-imagem {
+  width: 250px;
+  height: 154px;
+  /* Para centralizar as imagens */ 
+  margin: 15px auto auto auto;
+  display: block;
+}
+
+.nossos-projetos-titulo {
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+
+.nossos-projetos-celulas {
+  border: solid 1px rgba(255, 255, 255, 1);
+}
+
+.nossos-projetos-celulas:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+/* Fim das classes utilizadas na seção Nossos Projetos*/
