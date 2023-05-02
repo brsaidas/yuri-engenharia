@@ -57,7 +57,7 @@
 
 /* Início do css da seção Sliders */
 .principal {
-  height: 100vh;
+  /*height: 100vh;*/
   background-image: url("../img/img7.jpg");
   background-size: 100% 100%;
   color: var(--cor-clara);
@@ -115,6 +115,97 @@
 
 /* Início do CSS do Carroseel */
 .carrossel-imagem {
-  height: 100vh;
+  height: 90vh;
+}
+
+.carrossel-slide-1 {
+  background-image: url('../img/img4.jpg');
+  background-size: 100% 100%;
+}
+
+.carrossel-slide-2 {
+  background-image: url('../img/img5.jpg');
+  background-size: 100% 100%;
+}
+
+.carrossel-slide-3 {
+  background-image: url('../img/img6.jpg');
+  background-size: 100% 100%;
+}
+
+.carrossel-caixa {
+  margin-left: 10%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5em;
+  font-size: 24px;
+  gap: 1em;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carrossel-titulo {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-family: 'Dancing Script', var(--fonte-primaria);
+  font-weight: 700;
+  margin: auto auto;
+}
+
+.carrossel-paragrafo {  
+  color: #FFFFFF;
+  font-family: var(--fonte-secundaria);
+  font-style: italic;
 }
 /* Fim do CSS do Carrossel */
+
+/* Início CSS Como Trabalhamos */
+.como-trabalhamos-imagem {
+  width: 250px;
+  height: 154px;
+  /* Para centralizar as imagens */ 
+  margin: 15px auto auto auto;
+  display: block;
+}
+
+.como-trabalhamos-titulo {
+  font-family: 'Dancing Script';
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+
+.como-trabalhamos-celulas {
+  border: solid 1px rgba(255, 255, 255, 1);
+}
+
+.como-trabalhamos-celulas:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.como-trabalhamos {
+  padding: 10px 0px;
+}
+
+.como-trabalhamos-texto {
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+}
+/* Fim CSS Como Trabalhamos*/
+
+/* Início NavBar CSS*/
+.navbar-logo {
+  font-family: 'Dancing Script';
+  border: solid 2px;
+  padding: 0px 5px;
+}
+
+.navbar-logo:hover {
+  color: white!important;
+  background-color: black;
+}
+/* Fim NavBar CSS*/
