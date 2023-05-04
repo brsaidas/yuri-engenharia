@@ -209,3 +209,10 @@
   background-color: black;
 }
 /* Fim NavBar CSS*/
+/*css do video INICIO!!*/
+.caixa_video{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/*css do video FIM*/
