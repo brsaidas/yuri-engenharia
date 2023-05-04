@@ -153,12 +153,16 @@
   font-family: 'Dancing Script', var(--fonte-primaria);
   font-weight: 700;
   margin: auto auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carrossel-paragrafo {  
   color: #FFFFFF;
   font-family: var(--fonte-secundaria);
   font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 /* Fim do CSS do Carrossel */
 
@@ -197,7 +201,7 @@
 }
 /* Fim CSS Como Trabalhamos*/
 
-/* Início NavBar CSS*/
+/* Início NavBar CSS */
 .navbar-logo {
   font-family: 'Dancing Script';
   border: solid 2px;
@@ -208,11 +212,12 @@
   color: white!important;
   background-color: black;
 }
-/* Fim NavBar CSS*/
-/*css do video INICIO!!*/
+/* Fim NavBar CSS */
+
+/* Início CSS seção Vídeo */
 .caixa_video{
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-/*css do video FIM*/
+/* Fim CSS seção Vídeo */
