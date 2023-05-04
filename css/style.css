@@ -63,15 +63,30 @@
   color: var(--cor-clara);
 }
 
-.container__caixa {
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 5em;
-  font-size: 24px;
-  gap: 1em;
+@media only screen and (max-width: 1000px) {
+  .container__caixa {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5em;
+    font-size: 24px;
+    gap: 1em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container__caixa {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5em;
+    font-size: 24px;
+    gap: 1em;
+  }
 }
 
 .caixa__titulo {
@@ -198,6 +213,10 @@
 .como-trabalhamos-texto {
   text-align: center;
   font-family: var(--fonte-secundaria);
+}
+
+@media only screen and (max-width: 600px) {
+
 }
 /* Fim CSS Como Trabalhamos*/
 
