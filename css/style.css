@@ -26,23 +26,42 @@
 /* Fim das classes de uso geral CSS */
 
 /* Classe utilizadas na seção Nossos Projetos */
-.nossos-projetos-imagem {
-  width: 250px;
-  height: 154px;
-  /* Para centralizar as imagens */ 
-  margin: 15px auto auto auto;
-  display: block;
+@media only screen and (max-width: 1000px) {
+  .nossos-projetos-imagem {
+    width: auto;
+    /* Para centralizar as imagens */ 
+    margin: 15px auto auto auto;
+    display: block;
+  }
+
+  .nossos-projetos-titulo {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    text-align: center;
+    font-size: 75px;
+  }
 }
 
-.nossos-projetos-titulo {
-  font-family: 'Dancing Script';
-  font-weight: bold;
-  text-align: center;
-  font-size: 25px;
+@media only screen and (min-width: 1000px) {
+  .nossos-projetos-imagem {
+    width: 250px;
+    height: 154px;
+    /* Para centralizar as imagens */ 
+    margin: 15px auto auto auto;
+    display: block;
+  }
+
+  .nossos-projetos-titulo {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+  }
 }
 
 .nossos-projetos-celulas {
   border: solid 1px rgba(255, 255, 255, 1);
+  width: 100vw;
 }
 
 .nossos-projetos-celulas:hover {
@@ -74,6 +93,30 @@
     font-size: 24px;
     gap: 1em;
   }
+
+  .caixa__titulo {
+    font-size: 1.5em;
+    font-family: 'Dancing Script', var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 75px;
+  }
+
+  .caixa__paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    font-size: 50px;
+  }
+
+  .caixa__botao {
+    text-decoration: none;
+    color: var(--cor-clara);
+    background-color: var(--cor-secundaria);
+    padding: 1em 2em;
+    border-radius: 16px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 40px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -87,27 +130,27 @@
     font-size: 24px;
     gap: 1em;
   }
-}
 
-.caixa__titulo {
-  font-size: 1.5em;
-  font-family: 'Dancing Script', var(--fonte-primaria);
-  font-weight: 700;
-}
+  .caixa__titulo {
+    font-size: 1.5em;
+    font-family: 'Dancing Script', var(--fonte-primaria);
+    font-weight: 700;
+  }
 
-.caixa__paragrafo {
-  font-family: var(--fonte-secundaria);
-  font-style: italic;
-}
+  .caixa__paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+  }
 
-.caixa__botao {
-  text-decoration: none;
-  color: var(--cor-clara);
-  background-color: var(--cor-secundaria);
-  padding: 1em 2em;
-  border-radius: 16px;
-  font-family: var(--fonte-secundaria);
-  font-weight: 600;
+  .caixa__botao {
+    text-decoration: none;
+    color: var(--cor-clara);
+    background-color: var(--cor-secundaria);
+    padding: 1em 2em;
+    border-radius: 16px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+  }
 }
 
 .caixa__botao:hover {
@@ -125,14 +168,9 @@
   background-size: 100% 100%;
   color: var(--cor-clara);
 }
-
 /* Fim do CSS da seção Sliders */
 
 /* Início do CSS do Carroseel */
-.carrossel-imagem {
-  height: 90vh;
-}
-
 .carrossel-slide-1 {
   background-image: url('../img/img4.jpg');
   background-size: 100% 100%;
@@ -162,39 +200,95 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carrossel-titulo {
-  color: #FFFFFF;
-  font-size: 1.5em;
-  font-family: 'Dancing Script', var(--fonte-primaria);
-  font-weight: 700;
-  margin: auto auto;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+@media only screen and (max-width: 1000px) {
+  .carrossel-titulo {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Dancing Script', var(--fonte-primaria);
+    font-weight: 700;
+    margin: auto auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carrossel-paragrafo {  
+    color: #FFFFFF;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+  }
 }
 
-.carrossel-paragrafo {  
-  color: #FFFFFF;
-  font-family: var(--fonte-secundaria);
-  font-style: italic;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+@media only screen and (min-width: 1000px) {
+  .carrossel-imagem {
+    height: 100vh;
+  }
+
+  .carrossel-titulo {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', var(--fonte-primaria);
+    font-weight: 700;
+    margin: auto auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carrossel-paragrafo {  
+    color: #FFFFFF;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 }
 /* Fim do CSS do Carrossel */
 
 /* Início CSS Como Trabalhamos */
-.como-trabalhamos-imagem {
-  width: 250px;
-  height: 154px;
-  /* Para centralizar as imagens */ 
-  margin: 15px auto auto auto;
-  display: block;
+@media only screen and (max-width: 1000px) {
+  .como-trabalhamos-imagem {
+    width: auto;
+    /* Para centralizar as imagens */ 
+    margin: 15px auto auto auto;
+    display: block;
+  }
+
+  .como-trabalhamos-titulo {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    text-align: center;
+    font-size: 75px;
+  }
+
+  .como-trabalhamos-texto {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 50px;
+  }
 }
 
-.como-trabalhamos-titulo {
-  font-family: 'Dancing Script';
-  font-weight: bold;
-  text-align: center;
-  font-size: 25px;
+@media only screen and (min-width: 1000px) {
+  .como-trabalhamos-imagem {
+    width: 250px;
+    height: 154px;
+    /* Para centralizar as imagens */ 
+    margin: 15px auto auto auto;
+    display: block;
+  }
+
+  .como-trabalhamos-titulo {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .como-trabalhamos-texto {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+  }
 }
 
 .como-trabalhamos-celulas {
@@ -208,15 +302,6 @@
 
 .como-trabalhamos {
   padding: 10px 0px;
-}
-
-.como-trabalhamos-texto {
-  text-align: center;
-  font-family: var(--fonte-secundaria);
-}
-
-@media only screen and (max-width: 600px) {
-
 }
 /* Fim CSS Como Trabalhamos*/
 
@@ -367,6 +452,13 @@ footer {
   font-weight: 100;
 }
 
+.footer-logo {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: 'Dancing Script';
+}
+
 @media screen and (max-width: 768px){
   #folder_content {
     grid-template-columns: repeat(2, 1fr);
@@ -382,3 +474,12 @@ footer {
   }
 }
 /*Footer fim*/
+
+/* Início Navbar */
+.barra-de-navegacao {
+  position: absolute!important;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* Fim Navbar */
